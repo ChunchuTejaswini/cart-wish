@@ -8,7 +8,7 @@ import Usercontext from '../../Contexts/Usercontext'
 import Cartcontext from '../../Contexts/Cartcontext'
 import { checkoutAPI } from '../../Services/oderservices'
 import { toast,ToastContainer } from 'react-toastify'
-
+import config from "../../config.json"
 const Cartpage = () => {
    
    const userobj= useContext(Usercontext)
@@ -43,7 +43,7 @@ const checkout=()=>{
   return (
     <section className='align_center cart_page'>
         <div className="align_center user_info">
-            <img src={`http://localhost:5000/profile/${userobj?.profilePic}`} alt="user profile"/>
+            <img src={`${config.backendURL}/profile/${userobj?.profilePic}`} alt="user profile"/>
             <div>
                <p className="user_name">Name: {userobj?.name}</p>
                <p className="user_email">Email: {userobj?.email}</p>

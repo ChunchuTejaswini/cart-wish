@@ -1,6 +1,6 @@
 import React, { memo, useContext } from 'react'
 import "./Productcard.css"
-
+import config from "../../config.json"
 
 import star from "../../assets/star-glowing.png";
 import basket from "../../assets/shopping-basket.png";
@@ -14,7 +14,7 @@ const Productcard = ({product}) => {
    const user=useContext(Usercontext)
   return (
     <article className='product_card'>
-        <div className='product_image'><NavLink to={`/product/${product?._id}`}><img src={`http://localhost:5000/products/${product?.images[0]}`} alt="productimage"/></NavLink></div>
+        <div className='product_image'><NavLink to={`/product/${product?._id}`}><img src={`${config.backendURL}/products/${product?.images[0]}`} alt="productimage"/></NavLink></div>
         <div className="product_details">
             <h3 className="product_price">{product?.price}</h3>
             <p className="product_title">{product?.title}</p>
