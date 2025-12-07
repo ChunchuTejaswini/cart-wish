@@ -1,0 +1,61 @@
+in order to imporve the application performance we use some of the react hooks they are
+usememo and usecallback 
+for code management usereducer hook
+
+Usememo:
+usememo is a hook whihc is used for improving the performance if we have expensive calculations in react app
+
+expensive means same as finding the factorial ,finding the fibonacci series ,sum of 1million product price -usememo reduces unwnated calculation and avoids unnecessary renders
+
+usecallback:
+used for improving the performance of react application and prevent unwanted re-renders
+
+the only difference is usememo returns a value and usecallback returns a function
+
+usereducer hook is used to organise complex xstate and its method and makes compoennt code more celan
+
+
+ex: useReducer(reducer,0)
+
+reducer is for handling all functions like for suppose take a counter function in that increase,decrease and reset and second is the 
+
+const [count,dispatch]=useReducer(reducer,0)  //here count is the state    and dispatch function to send something
+
+
+reducer hook example (count inc,dec,reset)
+
+const reducer=(state,action)=>{
+    switch(action.type){
+        case "INCREASE":
+        return state+1;
+
+        case "Decrease":
+        return state-1;
+
+         case "Reset":
+        return 0
+
+        default: state;
+    }
+}
+const App=()=>{
+    const[count,setcount]=useReducer(reducer,0)
+
+    const inccount=()=>{
+        dispatch({type:"INCREASE"})
+    }
+    const deccount=()=>{
+        dispatch({type:"Decrease"})
+    }
+    const  rescount=()=>{
+        dispatch({type:"reset"})
+    }
+}
+
+cache is  a store which can hold the fetched data in the memory
+it acts like a temporary stoorage for our data whihc retunred from API requests
+
+React query features
+caching our data
+request cancellation on component unmount
+multiple retries

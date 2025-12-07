@@ -1,0 +1,85 @@
+/* Center the form section */
+.form_page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+/* The form container */
+.authentication_form {
+  background: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title */
+.authentication_form h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  color: #1976d2;
+  letter-spacing: 1px;
+}
+
+/* Each input block */
+.form_inputs div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+/* Label styling */
+.form_inputs label {
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input fields */
+.form_text_input {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form_text_input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+/* Submit button */
+.form_submit {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.form_submit:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+}
+
+.form_submit:active {
+  transform: translateY(1px);
+}
+.form_error{
+    color: red;
+}

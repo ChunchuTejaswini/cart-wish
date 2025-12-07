@@ -1,0 +1,48 @@
+/* Featured.css */
+
+/* Section styling */
+.featured_products {
+  margin: 65px;
+}
+
+/* Section heading */
+.featured_products> h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Product list container */
+.featured_product_list {
+  margin-bottom: 65px;
+  justify-content: center;
+
+}
+
+/* Individual product card */
+/* .product_card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+/* .product_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+} */
+
+/* Align text inside product */
+/* .product_card::after {
+  content: "Product";
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #555;
+}
+  */

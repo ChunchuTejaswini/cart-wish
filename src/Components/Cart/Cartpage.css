@@ -1,0 +1,77 @@
+/* Cartpage.css */
+
+.cart_page {
+  
+  flex-direction: column;
+ justify-content: center;
+  width: 60%;
+  padding: 32px 48px;
+  margin:0 auto;
+}
+
+/* User info section */
+.user_info {
+  
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.user_info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.user_name {
+  font-size: 21px;
+  font-weight: 600;
+  
+}
+
+/* .user_email {
+  color: #777;
+  font-size: 0.95rem;
+} */
+
+/* Cart summary table */
+.cart_bill {
+  background-color: #fff;
+  font-size: 16px;
+  border-collapse: collapse;
+  width: 400px;
+  align-self: flex-end;
+  margin-top: 16px;
+ 
+}
+
+.cart_bill td {
+  padding: 12px 20px;
+ border: 3px solid #e5e5e5;
+}
+.cart_bill td:last-child{
+    text-align: end;
+    width: 120px;
+}
+.cart_bill_final{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Checkout button */
+.checkout_button {
+    align-self: flex-end;
+    height: 38px !important;
+  margin:16px 0;
+  padding:0 16px !important;
+}
+.table_quantity_iput{
+  height: 50px;
+  justify-content: center;
+}
+.cart_remove_icon{
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}

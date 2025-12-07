@@ -1,0 +1,47 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.pagination li {
+  display: inline-block;
+}
+
+.pagination_button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  color: #333;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.pagination_button:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Optional active button styling (if you later add current page tracking) */
+.pagination_button.active {
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border-color: #007bff;
+}
+
+/* Responsive adjustment for smaller screens */
+@media (max-width: 600px) {
+  .pagination_button {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
