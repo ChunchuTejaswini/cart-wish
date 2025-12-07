@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import "./Signup.css";
 import user from "../../assets/user-male-circle.png";
 import { signup } from "../../Services/userServices";
-
+import { getUser } from "../../Services/userServices";
 
 const schema = z.object({
   
